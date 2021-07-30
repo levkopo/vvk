@@ -26,6 +26,12 @@ struct VKUser {
 	deactivated string
 	is_closed bool
 	can_access_closed bool
+}
+
+struct VKUserExtended {
+	VKUser
+	
+	pub:
 	about string
 	activities string
 	bdate string

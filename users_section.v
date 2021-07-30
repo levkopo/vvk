@@ -9,3 +9,9 @@ pub fn (this VK) users_get(id i64, params map[string]string) ?VKResponse<[]VKUse
 	all_params["user_ids"] = id.str()
 	return this.request<[]VKUser>("users.get", all_params)
 }
+
+pub fn (this VK) users_get_extended(id i64, params map[string]string) ?VKResponse<[]VKUserExtended> {
+	mut all_params := params.clone()
+	all_params["user_ids"] = id.str()
+	return this.request<[]VKUser>("users.get", all_params)
+}
