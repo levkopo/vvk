@@ -1,6 +1,6 @@
 module vvk
 
-struct VK {
+pub struct VK {
 	api_url string = "https://api.vk.com/method/"
 	token string
 	v string = "5.103"
