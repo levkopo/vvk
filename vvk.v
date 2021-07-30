@@ -4,6 +4,8 @@ import json
 import net.http
 import net.urllib
 
+fn main() {} 
+
 pub fn (this VK) request<T>(method string, params map[string]string) ?VKResponse<T> {
 	mut values := urllib.new_values()
 	values.add('access_token', this.token)
