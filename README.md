@@ -6,7 +6,7 @@ Library for using [vk.com](https://vk.com) api in V Language
 import levkopo.vvk
 
 fn main() {
-  vk := vk.VK {
+  vk := vvk.VK {
     token: '<your token>'
   }
 
